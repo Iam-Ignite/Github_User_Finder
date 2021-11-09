@@ -1,0 +1,235 @@
+/** @format */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+.App {
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI',
+		'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans',
+		'Droid Sans', 'Helvetica Neue', sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	height: 100vh;
+}
+
+code {
+	font-family: source-code-pro, Menlo, Monaco, Consolas,
+		'Courier New', monospace;
+}
+.logo {
+	padding: 15px 0;
+	width: 35%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+img {
+	width: 150px;
+	height: 150px;
+	border-radius: 100%;
+}
+.main-container {
+	transform: translate(0px, 161px);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	color: rgb(226, 224, 224);
+}
+h1 {
+	font-size: 25px;
+	font-weight: 700;
+	font-family: 'Courier New', Courier, monospace;
+	line-height: 27px;
+}
+h4 {
+	font-size: 16px;
+	font-weight: 400;
+	font-family: 'Courier New', Courier, monospace;
+	line-height: 56px;
+	color: rgb(18 53 158);
+}
+h3 {
+	font-size: 16px;
+	font-weight: 400;
+	font-family: 'Courier New', Courier, monospace;
+	line-height: 30px;
+	width: 459px;
+	margin-bottom: 30px;
+}
+h2 {
+	font-size: 21px;
+	font-weight: 700;
+	font-family: 'Courier New', Courier, monospace;
+	line-height: 21px;
+}
+h5 {
+	font-size: 14px;
+	font-weight: 400;
+	font-family: 'Courier New', Courier, monospace;
+	line-height: 30px;
+}
+
+.profile-box {
+	display: grid;
+	grid-template-columns: 197px 450px;
+	grid-gap: 4px;
+	padding: 54px 48px;
+	border-radius: 15px;
+	margin: 20px;
+	height: 50%;
+}
+
+.name_box {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.status_box {
+	background: #141c2f;
+	text-align: center;
+	line-height: 27px;
+	color: #fff;
+	width: 440px;
+	padding: 16px 35px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border-radius: 10px;
+}
+input {
+	padding: 0 25px;
+	font-size: 21px;
+	border: none;
+	outline: none;
+	width: 35rem;
+	height: 3rem;
+	background-color: #1f2a48;
+	color: #ffffff;
+}
+.search-box {
+	display: flex;
+	padding: 5px 6px 5px 38px;
+	border-radius: 15px;
+	align-items: center;
+	justify-content: center;
+}
+input::placeholder {
+	font-size: 20px;
+	color: rgba(4, 114, 108, 0.747);
+}
+.btn {
+	padding: 15px 23px;
+	font-size: 19px;
+	border-radius: 10px;
+	border: none;
+	outline: none;
+	color: #fff;
+	background: #004eff;
+}
+.search-icon {
+	transform: translate(-11px, 8px);
+	font-size: 31px;
+	font-weight: 800;
+	color: #004eff;
+}
+.mp {
+	margin-top: 30px;
+}
+a {
+	text-decoration: none;
+}
+.media {
+	width: 555px;
+	padding: 5px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.btn-mode {
+	border: none;
+	background-color: transparent;
+	color: #fff;
+	font-size: 21px;
+}
+.media span {
+	width: 180px;
+	line-height: 20px;
+	margin-right: 47px;
+	font-size: 14px;
+	color: #667c9e;
+}
+.icons {
+	margin-right: 10px;
+	line-height: 20px;
+	font-size: 20px;
+}
+@media only screen and (max-device-width: 425px) and (max-device-width: 600px) {
+	.main-container {
+		transform: translate(0px, 27px);
+	}
+
+	.search-box {
+		width: 364px;
+	}
+	.btn {
+		padding: 10px 19px;
+		font-size: 15px;
+	}
+	input {
+		padding: 0px 0px;
+		font-size: 18px;
+		width: 12rem;
+	}
+	.profile-box {
+		display: flex;
+		padding: 24px 20px;
+		flex-direction: column;
+		width: 365px;
+		align-items: center;
+	}
+	h4 {
+		text-align: center;
+	}
+	.name_box {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	h3 {
+		transform: translate(0px, 10px);
+		font-size: 18px;
+		width: 311px;
+		text-align: center;
+	}
+	.status_box {
+		width: 340px;
+		padding: 16px 27px;
+		align-items: center;
+		transform: translate(0px, 10px);
+	}
+	.media {
+		padding: 7px;
+		display: grid;
+		width: 11px;
+		grid-template-columns: 33px 197px;
+		align-items: center;
+	}
+	.mp {
+		margin-bottom: -11px;
+	}
+	input::placeholder {
+		font-size: 14px;
+	}
+	.logo {
+		padding: 15px 0;
+		width: 318px;
+	}
+}
+/*
+    background: #F5F8FF;
+    color: #4f535e;
+	style={{ 
+	color:`${mode ? '#fff' : ' #4E6995'}`
+	 }}
+*/
