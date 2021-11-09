@@ -40,8 +40,7 @@ function App() {
               onChange={(e) => setUser(e.target.value)}
               style={{ backgroundColor: `${mode ? '#1f2a48 ' : ' #FEFEFE'}`,
               color: `${mode ? '#fff' : ' #111'}`
-               }}
-            />
+               }}/>
             <button className="btn" type="submit">Search</button>
           </form>
         </div>
@@ -51,7 +50,6 @@ function App() {
         }}>
           <div className="details_box">
             <img src={data.avatar_url} alt="avatar" />
-
           </div>
           <div className="details_box">
             <div className="name_box">
@@ -61,14 +59,10 @@ function App() {
               <div className="text ">
               </div>
             </div>
-
             <h3>{data.bio == null ? <span>This profile has no bio</span> : <span>{data.bio}</span>}</h3>
-
-
             <div className="status_box" style={{
               backgroundColor: `${mode ? '#141c2f ' : ' #F5F8FF'}`,
-              color: `${mode ? '#fff' : ' #4f535e'}`
-            }}>
+              color: `${mode ? '#fff' : ' #4f535e'}` }}>
               <div className="status_row">
                 <h5>Repos</h5>
                 <h2>{data.public_repos}</h2>
@@ -84,23 +78,18 @@ function App() {
             </div>
 
             <div className="media mp">
-              <b style={{
-                color: `${mode ? '#fff' : ' #4E6995'}`
-              }}><IoLocationSharp className="icons" /></b>
+              <b style={{   color: `${mode ? '#fff' : ' #4E6995'}` }}><IoLocationSharp className="icons" /></b>
               {data.location == null ? <span>Not Available</span> : <span>{data.location}</span>}
-              <b style={{
-                color: `${mode ? '#fff' : ' #4E6995'}`
-              }}><IoLogoTwitter className="icons" /> </b>
+              <b style={{color: `${mode ? '#fff' : ' #4E6995'}`}}><IoLogoTwitter className="icons" /> </b>
               {data.twitter_username == null ? <span>Not Available</span> : <span>{data.twitter_username}</span>}
             </div>
             <div className="media">
-              <b style={{
-                color: `${mode ? '#fff' : ' #4E6995'}`
-              }}><IoArrowRedoOutline className="icons" /></b>
-              {data.blog == null || data.blog.length == 0 ? <span >Not Available</span> : <span>{data.blog}</span>}
-              <b style={{
-                color: `${mode ? '#fff' : ' #4E6995'}`
-              }}><IoPodium className="icons" /></b>
+              <b style={{ color: `${mode ? '#fff' : ' #4E6995'}`}}>
+                <IoArrowRedoOutline className="icons" /></b>
+              {data.blog == null || data.blog.length == 0 ?
+              <span >Not Available</span> : <span>{data.blog}</span>}
+              <b style={{color: `${mode ? '#fff' : ' #4E6995'}`}}>
+              <IoPodium className="icons" /></b>
               {data.company == null ? <span>Not Available</span> : <span>{data.company}</span>}
 
 
