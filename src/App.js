@@ -12,7 +12,7 @@ function App() {
 
   useEffect(() => {
     const getGitUser = async () => {
-      const res = await axios.get(`https://api.github.com/users/${user}`);
+      const res = await axios.get(`https://api.github.com/users/${user.toLocaleLowerCase()}`);
       setData(res.data)
     }
     getGitUser();
